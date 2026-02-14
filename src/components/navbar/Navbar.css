@@ -1,0 +1,460 @@
+/* .nav {
+	height: 90px;
+	padding: 24px 0;
+	border-bottom: 1px solid var(--nav-border);
+	color: var(--nav-text);
+	letter-spacing: normal;
+}
+
+.nav-row {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	column-gap: 30px;
+	row-gap: 20px;
+	flex-wrap: wrap;
+}
+
+.logo {
+	margin-right: auto;
+	color: var(--nav-text);
+	font-size: 24px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+
+}
+
+.logo strong {
+	font-weight: 700;
+}
+
+.nav-list {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	align-items: center;
+	column-gap: 20px;
+	font-family: 'Poppins', sans-serif;
+	padding: 14px 32px;
+	border: 1px solid grey;
+	border-radius: 28px;
+	background: rgba(20, 20, 20, 0.2);
+}
+.nav-list__item{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+}
+
+.nav-list__link {
+	color: var(--nav-text);
+	transition: opacity 0.2s ease-in;
+}
+
+.nav-list__link:hover {
+	opacity: 0.8;
+}
+
+.nav-list__link--active {
+	position: relative;
+}
+
+.nav-list__link--active::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 100%;
+	display: block;
+	height: 2px;
+	width: 100%;
+	background-color: var(--accent);
+} */
+
+/* Navbar.css */
+
+/* Импорт шрифта */
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Глобальный класс для блокировки скролла */
+body.menu-open {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.navbar {
+	position: sticky;
+	top: 0;
+	max-width: 100vw;
+	overflow-x: hidden;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	transition: all 0.3s ease;
+	background: transparent;
+	padding: 10px 0;
+}
+
+/* Эффект стекла при прокрутке */
+.navbar-scrolled {
+	background: rgba(15, 23, 42, 0.8);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	box-shadow:
+		0 10px 30px rgba(0, 0, 0, 0.2),
+		0 0 0 1px rgba(255, 255, 255, 0.05);
+	padding: 5px 0;
+}
+
+.navbar-container {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+}
+
+/* Логотип */
+.navbar-logo {
+	position: relative;
+	cursor: pointer;
+}
+
+.logo-text {
+	font-size: 1.8rem;
+	font-weight: 800;
+	letter-spacing: 2px;
+	background: linear-gradient(135deg, #fff 0%, #cbd5e1 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	position: relative;
+	z-index: 1;
+	text-transform: uppercase;
+}
+
+.logo-glow {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 120%;
+	height: 120%;
+	background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, transparent 70%);
+	filter: blur(15px);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	pointer-events: none;
+}
+
+.navbar-logo:hover .logo-glow {
+	opacity: 1;
+}
+
+/* Десктопное меню */
+.navbar-menu {
+	display: block;
+}
+
+.nav-items-container {
+	display: flex;
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 50px;
+	padding: 5px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow:
+		0 4px 15px rgba(0, 0, 0, 0.1),
+		inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.nav-item {
+	position: relative;
+	background: transparent;
+	border: none;
+	padding: 12px 20px;
+	margin: 0 2px;
+	color: #cbd5e1;
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	cursor: pointer;
+	border-radius: 45px;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.nav-item::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+	border-radius: 45px;
+	transition: transform 0.3s ease;
+	z-index: -1;
+}
+
+.nav-item:hover {
+	color: #fff;
+	transform: translateY(-2px);
+}
+
+.nav-item:hover::before {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.nav-item.active {
+	color: #fff;
+	background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+	box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+.nav-item.active .nav-item-indicator {
+	width: 20px;
+	opacity: 1;
+}
+
+.nav-item-text {
+	position: relative;
+	z-index: 1;
+}
+
+.nav-item-indicator {
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 3px;
+	background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6);
+	border-radius: 3px;
+	transition: width 0.3s ease;
+	opacity: 0;
+}
+
+/* Бургер-меню */
+.burger-menu {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 20px;
+	cursor: pointer;
+	position: relative;
+	z-index: 1001;
+}
+
+.burger-line {
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(90deg, #60a5fa, #a78bfa);
+	border-radius: 3px;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger-menu.active .burger-line:nth-child(1) {
+	transform: translateY(8px) rotate(45deg);
+	background: linear-gradient(90deg, #f472b6, #a78bfa);
+}
+
+.burger-menu.active .burger-line:nth-child(2) {
+	opacity: 0;
+	transform: translateX(-10px);
+}
+
+.burger-menu.active .burger-line:nth-child(3) {
+	transform: translateY(-9px) rotate(-45deg);
+	background: linear-gradient(90deg, #f472b6, #a78bfa);
+}
+
+/* Мобильное меню */
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	right: -100%;
+	width: 100%;
+	height: 100vh;
+	background: rgba(15, 23, 42, 0.98);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	transition: right 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* Добавляем для корректной работы на мобильных */
+	-webkit-overflow-scrolling: touch;
+	overflow-y: auto;
+}
+
+.mobile-menu.active {
+	right: 0;
+}
+
+/* Затемнение фона при открытом меню */
+.mobile-menu.active ~ * {
+	pointer-events: none;
+}
+
+.mobile-menu-content {
+	width: 100%;
+	max-width: 400px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	/* Добавляем отступ сверху для учета статус-бара на мобильных */
+	padding-top: 80px;
+}
+
+.mobile-nav-item {
+	position: relative;
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	padding: 20px 25px;
+	color: #cbd5e1;
+	font-size: 1.2rem;
+	font-weight: 600;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	width: 100%;
+}
+
+.mobile-nav-item::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+	transition: left 0.6s ease;
+}
+
+.mobile-nav-item:hover::before {
+	left: 100%;
+}
+
+.mobile-nav-item.active {
+	background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+	border-color: #3b82f6;
+	color: #fff;
+	box-shadow: 0 5px 20px rgba(59, 130, 246, 0.3);
+}
+
+.mobile-item-arrow {
+	opacity: 0;
+	transform: translateX(-10px);
+	transition: all 0.3s ease;
+	color: #3b82f6;
+	font-size: 1.2rem;
+}
+
+.mobile-nav-item.active .mobile-item-arrow,
+.mobile-nav-item:hover .mobile-item-arrow {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+	.navbar-menu {
+		display: none;
+	}
+
+	.burger-menu {
+		display: flex;
+	}
+
+	.navbar-container {
+		padding: 0 20px;
+	}
+
+	.logo-text {
+		font-size: 1.4rem;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.nav-item {
+		padding: 10px 15px;
+		font-size: 0.95rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.mobile-nav-item {
+		padding: 15px 20px;
+		font-size: 1rem;
+	}
+
+	.logo-text {
+		font-size: 1.2rem;
+	}
+	
+	.mobile-menu-content {
+		padding-top: 70px;
+	}
+}
+
+/* Анимации */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.mobile-nav-item {
+	animation: fadeIn 0.5s ease-out forwards;
+	opacity: 0;
+}
+
+.mobile-nav-item:nth-child(1) {
+	animation-delay: 0.05s;
+}
+
+.mobile-nav-item:nth-child(2) {
+	animation-delay: 0.1s;
+}
+
+.mobile-nav-item:nth-child(3) {
+	animation-delay: 0.15s;
+}
+
+.mobile-nav-item:nth-child(4) {
+	animation-delay: 0.2s;
+}
+
+.mobile-nav-item:nth-child(5) {
+	animation-delay: 0.25s;
+}
+
+.mobile-nav-item:nth-child(6) {
+	animation-delay: 0.3s;
+}

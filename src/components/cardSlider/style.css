@@ -1,0 +1,78 @@
+.slick-dots li {
+    width: 40px;
+    height: 5px;
+}
+
+.slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    content: '';
+    background: var(--blue);
+    opacity: .25;
+    margin-right: 10px;
+}
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: var(--blue);
+    border: none;
+    outline: none;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 35px;
+    color: cadetblue;
+}
+
+.slick-next {
+    right: -60px;
+}
+
+.slick-prev {
+    left: -60px;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 1018px) {
+    .slick-arrow{
+        display: none !important;
+    }
+}
