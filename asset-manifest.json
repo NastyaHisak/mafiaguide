@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mafiaguide/static/css/main.ffea16b3.css",
-    "main.js": "/mafiaguide/static/js/main.8abb280f.js",
+    "main.js": "/mafiaguide/static/js/main.12706cd2.js",
     "static/js/787.7063f852.chunk.js": "/mafiaguide/static/js/787.7063f852.chunk.js",
     "static/media/civian.png": "/mafiaguide/static/media/civian.7f5f8a57c2d5a5397cc5.png",
     "static/media/lady.png": "/mafiaguide/static/media/lady.81db61563703e579c57e.png",
@@ -16,11 +16,11 @@
     "index.html": "/mafiaguide/index.html",
     "static/media/arrow.svg": "/mafiaguide/static/media/arrow.be58a60f09e579d727825ab3744892e9.svg",
     "main.ffea16b3.css.map": "/mafiaguide/static/css/main.ffea16b3.css.map",
-    "main.8abb280f.js.map": "/mafiaguide/static/js/main.8abb280f.js.map",
+    "main.12706cd2.js.map": "/mafiaguide/static/js/main.12706cd2.js.map",
     "787.7063f852.chunk.js.map": "/mafiaguide/static/js/787.7063f852.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ffea16b3.css",
-    "static/js/main.8abb280f.js"
+    "static/js/main.12706cd2.js"
   ]
 }
