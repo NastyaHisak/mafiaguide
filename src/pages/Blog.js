@@ -1,28 +1,3 @@
-// import {useParams} from "react-router-dom";
-// import {blogs} from "../helpers/blogList"
-
-// const Blog = () => {
-// 	const {id} = useParams();
-// 	const blog = blogs[id];
-
-//     return (
-// 		<main className="section">
-// 			<div className="container">
-// 				<div className="project-details">
-// 					<h1 className="title-1 project-details__title">{blog.title}</h1>
-// 					{blog.description && (
-// 						<div className="project-details__desc">
-// 							<p>{blog.description}</p>
-// 						</div>
-// 					)}
-// 				</div>
-// 			</div>
-// 		</main>
-// 	);
-// }
-
-// export default Blog;
-
 import React, { useState } from 'react';
 import './Blog.css';
 
@@ -55,7 +30,7 @@ const Blog = ({ post }) => {
         {/* Блок с советами (только в развернутом виде) */}
         {isExpanded && post.tips && (
           <div className="blog-tips">
-            <h4 className="tips-title">💡 Советы профессионала:</h4>
+            <h4 className="tips-title">💡 Рекомендации:</h4>
             <ul className="tips-list">
               {post.tips.map((tip, index) => (
                 <li key={index} className="tip-item">{tip}</li>

@@ -9,11 +9,6 @@ const SignCard = ({ sign }) => {
     <div className={`sign-card ${isExpanded ? 'expanded' : ''}`}>
       {/* GIF контейнер */}
       <div className="sign-gif-container">
-        {!isGifLoaded && (
-          <div className="gif-loader">
-            <div className="loader-spinner"></div>
-          </div>
-        )}
         <div className="gif-wrapper">
           <img 
             src={sign.gifUrl} 
@@ -22,9 +17,6 @@ const SignCard = ({ sign }) => {
             onLoad={() => setIsGifLoaded(true)}
             style={{ display: isGifLoaded ? 'block' : 'none' }}
           />
-          <div className="gif-overlay">
-            <span className="gif-play-icon">▶</span>
-          </div>
         </div>
       </div>
 
