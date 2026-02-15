@@ -1,0 +1,182 @@
+/* Blogs.css */
+
+.blogs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 40px;
+  min-height: 100vh;
+  color: #e2e8f0;
+}
+
+.blogs-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.blogs-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+.blogs-subtitle {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Категории */
+.categories-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.category-button {
+  padding: 12px 25px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 30px;
+  color: #94a3b8;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(96, 165, 250, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.category-button:hover::before {
+  left: 100%;
+}
+
+.category-button:hover {
+  color: #fff;
+  transform: translateY(-3px);
+  border-color: #60a5fa;
+}
+
+.category-button.active {
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.2), rgba(167, 139, 250, 0.2));
+  border-color: #60a5fa;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(96, 165, 250, 0.3);
+}
+
+/* Счетчик статей */
+.posts-counter {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+.counter-number {
+  color: #60a5fa;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* Сетка блогов */
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* Пагинация */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.pagination-button {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  color: #94a3b8;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination-button:hover {
+  background: rgba(96, 165, 250, 0.1);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.pagination-button.active {
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  color: #fff;
+  border: none;
+  box-shadow: 0 5px 15px rgba(96, 165, 250, 0.3);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .blogs-container {
+    padding: 80px 15px 30px;
+  }
+  
+  .blogs-title {
+    font-size: 2rem;
+  }
+  
+  .blogs-subtitle {
+    font-size: 1rem;
+  }
+  
+  .blogs-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .categories-container {
+    gap: 10px;
+  }
+  
+  .category-button {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blogs-title {
+    font-size: 1.8rem;
+  }
+  
+  .pagination {
+    flex-wrap: wrap;
+  }
+}

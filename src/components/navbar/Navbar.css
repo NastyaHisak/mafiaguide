@@ -1,4 +1,4 @@
-/* .nav {
+.nav {
 	height: 90px;
 	padding: 24px 0;
 	border-bottom: 1px solid var(--nav-border);
@@ -19,7 +19,6 @@
 	margin-right: auto;
 	color: var(--nav-text);
 	font-size: 24px;
-	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 
 }
@@ -34,7 +33,6 @@
 	row-gap: 10px;
 	align-items: center;
 	column-gap: 20px;
-	font-family: 'Poppins', sans-serif;
 	padding: 14px 32px;
 	border: 1px solid grey;
 	border-radius: 28px;
@@ -73,13 +71,8 @@
 
 
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 
-/* Глобальный класс для блокировки скролла */
+
 body.menu-open {
 	overflow: hidden;
 	position: fixed;
@@ -100,7 +93,7 @@ body.menu-open {
 	padding: 10px 0;
 }
 
-/* Эффект стекла при прокрутке */
+
 .navbar-scrolled {
 	background: rgba(15, 23, 42, 0.8);
 	backdrop-filter: blur(12px);
@@ -121,7 +114,6 @@ body.menu-open {
 	height: 70px;
 }
 
-/* Логотип */
 .navbar-logo {
 	position: relative;
 	cursor: pointer;
@@ -158,7 +150,6 @@ body.menu-open {
 	opacity: 1;
 }
 
-/* Десктопное меню */
 .navbar-menu {
 	display: block;
 }
@@ -245,7 +236,6 @@ body.menu-open {
 	opacity: 0;
 }
 
-/* Бургер-меню */
 .burger-menu {
 	display: none;
 	flex-direction: column;
@@ -280,7 +270,6 @@ body.menu-open {
 	background: linear-gradient(90deg, #f472b6, #a78bfa);
 }
 
-/* Мобильное меню */
 .mobile-menu {
 	position: fixed;
 	top: 0;
@@ -295,7 +284,6 @@ body.menu-open {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* Добавляем для корректной работы на мобильных */
 	-webkit-overflow-scrolling: touch;
 	overflow-y: auto;
 }
@@ -304,7 +292,6 @@ body.menu-open {
 	right: 0;
 }
 
-/* Затемнение фона при открытом меню */
 .mobile-menu.active ~ * {
 	pointer-events: none;
 }
@@ -316,7 +303,6 @@ body.menu-open {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
-	/* Добавляем отступ сверху для учета статус-бара на мобильных */
 	padding-top: 80px;
 }
 
@@ -374,7 +360,6 @@ body.menu-open {
 	transform: translateX(0);
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
 	.navbar-menu {
 		display: none;
@@ -415,7 +400,6 @@ body.menu-open {
 	}
 }
 
-/* Анимации */
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -456,3 +440,8 @@ body.menu-open {
 .mobile-nav-item:nth-child(6) {
 	animation-delay: 0.3s;
 }
+
+
+
+
+

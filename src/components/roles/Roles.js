@@ -173,14 +173,6 @@ const getCurrentRoles = () => {
 
               </div>
 
-              {/* Декоративные элементы */}
-              <div className="card-decoration">
-                <div className="decoration-corner top-left"></div>
-                <div className="decoration-corner top-right"></div>
-                <div className="decoration-corner bottom-left"></div>
-                <div className="decoration-corner bottom-right"></div>
-              </div>
-
               {/* Эффект выбора */}
               <div className="selection-ring"></div>
             </div>

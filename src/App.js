@@ -5,6 +5,7 @@ import {HashRouter as Router, Routes, Route} from "react-router-dom";
 import Navbar from "./components/navbar/Navbar"
 import Footer from "./components/footer/Footer";
 import Home from "./pages/Home";
+import Signs from "./pages/Signs";
 import Blogs from "./pages/Blogs";
 import Blog from "./pages/Blog";
 
@@ -18,6 +19,7 @@ function App() {
 				<Navbar />
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route path="/signs" element={<Signs />} />
 					<Route path="/projects" element={<Blogs />} />
 					<Route path="/project/:id" element={<Blog />} />
 				</Routes>

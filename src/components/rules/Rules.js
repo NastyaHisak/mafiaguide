@@ -252,40 +252,6 @@ const Rules = () => {
           </div>
         ))}
       </div>
-
-      {/* Ключевые отличия режимов */}
-      <div className="rules-comparison">
-        <h3 className="comparison-title">Ключевые отличия режимов</h3>
-        <div className="comparison-grid">
-          <div className="comparison-col">
-            <div className="comparison-header city-mode">
-              <span className="comparison-icon">🏙️</span>
-              <h4>Городская Мафия</h4>
-            </div>
-            <ul className="comparison-list">
-              <li>✅ Полный набор ролей (9+ персонажей)</li>
-              <li>✅ Эмоциональная игра, актерство</li>
-              <li>✅ Возможны шутки, импровизация</li>
-              <li>✅ Маньяк в составе</li>
-              <li>✅ Гибкие временные рамки</li>
-            </ul>
-          </div>
-          
-          <div className="comparison-col">
-            <div className="comparison-header sport-mode">
-              <span className="comparison-icon">⚡</span>
-              <h4>Спортивная Мафия</h4>
-            </div>
-            <ul className="comparison-list">
-              <li>✅ Строгий регламент времени</li>
-              <li>✅ Запрещены эмоции и жесты</li>
-              <li>✅ Только логика и анализ</li>
-              <li>❌ Нет Маньяка</li>
-              <li>❌ Минималистичный набор ролей</li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
