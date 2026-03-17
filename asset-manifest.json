@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mafiaguide/static/css/main.376adb3f.css",
-    "main.js": "/mafiaguide/static/js/main.11a78ab6.js",
+    "main.css": "/mafiaguide/static/css/main.feeac55b.css",
+    "main.js": "/mafiaguide/static/js/main.a06b79e6.js",
     "static/js/787.9816b644.chunk.js": "/mafiaguide/static/js/787.9816b644.chunk.js",
     "static/media/civian.png": "/mafiaguide/static/media/civian.7f5f8a57c2d5a5397cc5.png",
     "static/media/lady.png": "/mafiaguide/static/media/lady.81db61563703e579c57e.png",
@@ -11,15 +11,37 @@
     "static/media/detective.png": "/mafiaguide/static/media/detective.f130c3bbe87bc948adde.png",
     "static/media/neutral.png": "/mafiaguide/static/media/neutral.fa30b643d07979842ed2.png",
     "static/media/main-bg.png": "/mafiaguide/static/media/main-bg.b361809042d2c062b45e.png",
-    "static/media/gif-01.gif": "/mafiaguide/static/media/gif-01.f09435895d07f2c79114.gif",
+    "static/media/sign-05.jpg": "/mafiaguide/static/media/sign-05.d33634188f488c590433.jpg",
+    "static/media/sign-04.jpg": "/mafiaguide/static/media/sign-04.29e560400a42b92092fc.jpg",
+    "static/media/sign-15.jpg": "/mafiaguide/static/media/sign-15.fa37578df88567bb0cb7.jpg",
+    "static/media/sign-03.jpg": "/mafiaguide/static/media/sign-03.acfe32938f8d8b197b9c.jpg",
+    "static/media/sign-19.jpg": "/mafiaguide/static/media/sign-19.17bb420d9514f17ff4c9.jpg",
+    "static/media/sign-16.jpg": "/mafiaguide/static/media/sign-16.3de89c942afb2d6d7c28.jpg",
+    "static/media/sign-18.jpg": "/mafiaguide/static/media/sign-18.055d03b13dbc61843266.jpg",
+    "static/media/sign-12-2.jpg": "/mafiaguide/static/media/sign-12-2.b164d4ae0842e0f353b5.jpg",
+    "static/media/sign-12-1.jpg": "/mafiaguide/static/media/sign-12-1.c20c927b4158894d120f.jpg",
+    "static/media/sign-10-2.jpg": "/mafiaguide/static/media/sign-10-2.f324a062ed7c177cf4e7.jpg",
+    "static/media/sign-13.jpg": "/mafiaguide/static/media/sign-13.87b6ddd8f0da8dea12cc.jpg",
+    "static/media/sign-02.jpg": "/mafiaguide/static/media/sign-02.0221a91a8b7e7c4a8516.jpg",
+    "static/media/sign-17.jpg": "/mafiaguide/static/media/sign-17.e431278bd704474d3ff1.jpg",
+    "static/media/sign-20-2.jpg": "/mafiaguide/static/media/sign-20-2.64ca1c0e0e59f4e8ee8e.jpg",
+    "static/media/sign-07.jpg": "/mafiaguide/static/media/sign-07.97ef8ce3efaccf8f9d23.jpg",
+    "static/media/sign-14.jpg": "/mafiaguide/static/media/sign-14.9451e1dbb196d5322686.jpg",
+    "static/media/sign-08.jpg": "/mafiaguide/static/media/sign-08.8ff724e95ac703d55b2e.jpg",
+    "static/media/sign-09.jpg": "/mafiaguide/static/media/sign-09.7894c2e3c1c16f309fc6.jpg",
+    "static/media/sign-01.jpg": "/mafiaguide/static/media/sign-01.cdf138c0bc464ebfb842.jpg",
+    "static/media/sign-20-1.jpg": "/mafiaguide/static/media/sign-20-1.d88db63777085c6525ca.jpg",
+    "static/media/sign-10-1.jpg": "/mafiaguide/static/media/sign-10-1.2d505e1974c71a7366ac.jpg",
+    "static/media/sign-06.jpg": "/mafiaguide/static/media/sign-06.18c7f65007616a76bbd6.jpg",
+    "static/media/sign-11.jpg": "/mafiaguide/static/media/sign-11.9e86f87ff31820c38c24.jpg",
     "index.html": "/mafiaguide/index.html",
     "static/media/arrow.svg": "/mafiaguide/static/media/arrow.be58a60f09e579d727825ab3744892e9.svg",
-    "main.376adb3f.css.map": "/mafiaguide/static/css/main.376adb3f.css.map",
-    "main.11a78ab6.js.map": "/mafiaguide/static/js/main.11a78ab6.js.map",
+    "main.feeac55b.css.map": "/mafiaguide/static/css/main.feeac55b.css.map",
+    "main.a06b79e6.js.map": "/mafiaguide/static/js/main.a06b79e6.js.map",
     "787.9816b644.chunk.js.map": "/mafiaguide/static/js/787.9816b644.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.376adb3f.css",
-    "static/js/main.11a78ab6.js"
+    "static/css/main.feeac55b.css",
+    "static/js/main.a06b79e6.js"
   ]
 }
